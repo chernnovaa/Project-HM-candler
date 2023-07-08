@@ -1,6 +1,9 @@
 .menu {
   &__list {
     display: flex;
-    gap: 20px;
+    gap: 2rem;
+    &-link {
+      text-transform: uppercase;
+    }
   }
 }
