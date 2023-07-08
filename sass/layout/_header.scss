@@ -1,0 +1,9 @@
+.header {
+  background-color: $color-primary-light;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: .4rem;
+  }
+}
