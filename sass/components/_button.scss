@@ -1,0 +1,21 @@
+.menu__btn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1.875rem;
+  height: 1.563rem;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+
+  span {
+    height: 1px;
+    width: 100%;
+    background-color: $color-primary-dark;
+  }
+
+    @media only screen and (max-width: $bp-large-1) {
+      display: flex;
+   }
+}

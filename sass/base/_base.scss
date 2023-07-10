@@ -13,16 +13,36 @@ a {
   color: inherit;
 }
 
+ul {
+  list-style: none;
+}
+
 body {
   color: $color-black;
   font-family: $font-family-primary;
   font-size: $default-font-size;
   font-weight: 400;
   line-height: 1.2;
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: $responsive-font-size;
+    }
 }
 
 .container {
   max-width: 72.5rem;  //1160px
   margin: 0 auto;
   padding: 0 1rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      padding: 0 1.25rem;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      max-width: 40rem;
+    }
+
+    @media only screen and (max-width: $bp-large-1) {
+      padding: 0 0.625rem;
+    }
 }

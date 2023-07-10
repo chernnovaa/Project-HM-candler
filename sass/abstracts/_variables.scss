@@ -1,7 +1,18 @@
 $color-primary-light: #fff8f6;
+$color-primary-dark: #7b6152;
 $color-black: #000;
 
 $default-font-size : 0.875rem;
+$responsive-font-size: 0.625rem;
 
 $font-family-primary: 'Comfortaa', cursive;
 $font-family-secondary: 'Yeseva One', cursive;
+
+//  RESPONSIVE BREAKPOINTS
+$bp-largest: 62.5em; //1000px
+$bp-largest-1: 56.25em; //900px
+$bp-large: 48em; //768px
+$bp-large-1: 40em; //640px
+$bp-large-2: 31.25em; //500px
+$bp-medium: 30em; //480px
+$bp-small: 22.5em; //360px

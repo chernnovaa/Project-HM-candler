@@ -1,0 +1,44 @@
+.footer {
+  padding: 2.5rem 0 2.188rem 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+     @media only screen and (max-width: $bp-largest-1) {
+        flex-wrap: wrap;
+     }
+
+      @media only screen and (max-width: $bp-large-2) {
+        flex-direction: column;
+      }
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    width: 14.375rem;
+
+      @media only screen and (max-width: $bp-largest-1) {
+        width: 100%;
+        text-align: center;
+        padding-top: 0.938rem;
+      }
+  }
+  &__social {
+    display: flex;
+    gap: 0.938rem;
+
+      @media only screen and (max-width: $bp-largest-1) {
+        justify-content: center;
+      }
+  }
+
+  @media only screen and (max-width: $bp-large-2) {
+    padding: 3.125rem 0;
+    font-size: $default-font-size;
+  }
+}
+
+.email {
+  margin: 1.063rem 0;
+}
