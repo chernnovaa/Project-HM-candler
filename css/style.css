@@ -50,6 +50,20 @@ body {
 .heading-tertiary {
   font-family: "Yeseva One", cursive;
   font-size: 1.875rem; }
+  @media only screen and (max-width: 48em) {
+    .heading-tertiary {
+      font-size: 1.25rem; } }
+  @media only screen and (max-width: 30em) {
+    .heading-tertiary {
+      font-size: 0.938rem; } }
+
+@media only screen and (max-width: 48em) {
+  .paragraph {
+    font-size: 0.625rem; } }
+
+@media only screen and (max-width: 30em) {
+  .paragraph {
+    font-size: 0.5rem; } }
 
 .menu__btn {
   display: none;
@@ -71,6 +85,10 @@ body {
   background-color: #ffbd59;
   font-family: "Comfortaa", cursive;
   font-size: 0.875rem; }
+  @media only screen and (max-width: 30em) {
+    .btn {
+      font-size: 0.625rem;
+      padding: 0.875rem 2.5rem; } }
 
 .top__wrapper {
   width: 23.125rem;
@@ -79,10 +97,28 @@ body {
     .top__wrapper {
       width: 20.813rem;
       padding: 5.938rem 0 4.375rem; } }
+  @media only screen and (max-width: 48em) {
+    .top__wrapper {
+      width: 14.375rem; } }
+  @media only screen and (max-width: 30em) {
+    .top__wrapper {
+      width: 11.25rem; } }
   .top__wrapper-title {
     margin-bottom: 0.938rem; }
+    @media only screen and (max-width: 48em) {
+      .top__wrapper-title {
+        margin-bottom: 1.25rem; } }
+    @media only screen and (max-width: 30em) {
+      .top__wrapper-title {
+        margin-bottom: 0.938rem; } }
   .top__wrapper-text {
     margin-bottom: 3rem; }
+    @media only screen and (max-width: 48em) {
+      .top__wrapper-text {
+        margin-bottom: 1.25rem; } }
+    @media only screen and (max-width: 30em) {
+      .top__wrapper-text {
+        margin-bottom: 0.938rem; } }
 
 .top__inner {
   position: relative; }
@@ -93,9 +129,18 @@ body {
     @media only screen and (max-width: 62.5em) {
       .top__inner-img {
         left: 18.75rem; } }
+    @media only screen and (max-width: 48em) {
+      .top__inner-img {
+        left: 11.25rem; } }
+    @media only screen and (max-width: 30em) {
+      .top__inner-img {
+        left: 10.5rem; } }
     @media only screen and (max-width: 62.5em) {
       .top__inner-img img {
         width: 40.938rem; } }
+    @media only screen and (max-width: 30em) {
+      .top__inner-img img {
+        width: 19.25rem; } }
 
 .footer {
   padding: 2.5rem 0 2.188rem 0; }
@@ -197,3 +242,6 @@ body {
 
 .section-top {
   padding: 2.5rem 0 9rem 0; }
+  @media only screen and (max-width: 30em) {
+    .section-top {
+      padding: 1.875rem 0 3.125rem; } }
