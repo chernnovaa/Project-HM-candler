@@ -1,0 +1,37 @@
+.top__wrapper {
+  width: 23.125rem;
+  padding: 9.375rem 0 15.625rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      width: 20.813rem;
+      padding: 5.938rem 0 4.375rem;
+    }
+
+  &-title {
+    margin-bottom: 0.938rem;
+  }
+
+  &-text {
+    margin-bottom: 3rem;
+  }
+}
+
+.top__inner {
+  position: relative;
+  
+  &-img {
+    position: absolute;
+    top: 0;
+    left: 15rem;
+
+      @media only screen and (max-width: $bp-largest) {
+          left: 18.75rem;
+        }
+
+    & img {
+      @media only screen and (max-width: $bp-largest) {
+        width: 40.938rem;
+      }
+    }
+  }
+}

@@ -17,16 +17,11 @@ ul {
   list-style: none;
 }
 
-body {
-  color: $color-black;
-  font-family: $font-family-primary;
-  font-size: $default-font-size;
-  font-weight: 400;
-  line-height: 1.2;
-
-    @media only screen and (max-width: $bp-large) {
-      font-size: $responsive-font-size;
-    }
+button {
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  cursor: pointer;
 }
 
 .container {
@@ -45,4 +40,9 @@ body {
     @media only screen and (max-width: $bp-large-1) {
       padding: 0 0.625rem;
     }
+}
+
+.main {
+  background-color: $color-primary-light;
+  overflow-x: clip;
 }
