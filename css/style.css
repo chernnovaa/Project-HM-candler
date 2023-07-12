@@ -31,7 +31,7 @@ button {
       max-width: 40rem; } }
   @media only screen and (max-width: 40em) {
     .container {
-      padding: 0 0.625rem; } }
+      padding: 0 10px; } }
 
 .main {
   background-color: #fff8f6;
@@ -57,6 +57,14 @@ body {
     .heading-tertiary {
       font-size: 0.938rem; } }
 
+.heading-secondary {
+  font-size: 2.5rem;
+  font-family: "Yeseva One", cursive;
+  font-weight: 400; }
+  @media only screen and (max-width: 48em) {
+    .heading-secondary {
+      font-size: 0.938rem; } }
+
 @media only screen and (max-width: 48em) {
   .paragraph {
     font-size: 0.625rem; } }
@@ -64,6 +72,81 @@ body {
 @media only screen and (max-width: 30em) {
   .paragraph {
     font-size: 0.5rem; } }
+
+.about__inner {
+  display: flex;
+  align-items: center; }
+
+.about__content {
+  min-width: 50px; }
+  @media only screen and (max-width: 62.5em) {
+    .about__content {
+      min-width: 300px; } }
+  @media only screen and (max-width: 48em) {
+    .about__content {
+      min-width: 200px; } }
+  @media only screen and (max-width: 30em) {
+    .about__content {
+      min-width: 170px; } }
+  @media only screen and (max-width: 22.5em) {
+    .about__content {
+      min-width: 233px; } }
+  .about__content-title, .about__content-text {
+    margin-bottom: 15px; }
+
+.about__list {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+  padding: 0 0 3rem 6.875rem;
+  flex-basis: 58.125rem;
+  position: relative; }
+  .about__list::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background-image: url(../images/about-decor.png);
+    width: 1.375rem;
+    height: 1.875rem; }
+  .about__list::after {
+    position: absolute;
+    content: "";
+    background-color: #7b6152;
+    width: 1000%;
+    height: 1px;
+    left: 1.375rem;
+    bottom: 0.813rem; }
+  @media only screen and (max-width: 62.5em) {
+    .about__list {
+      padding-left: 1.25rem; } }
+  @media only screen and (max-width: 48em) {
+    .about__list {
+      gap: 0 10px; } }
+  @media only screen and (max-width: 30em) {
+    .about__list {
+      align-items: flex-end;
+      gap: 0 0.313rem; } }
+
+.about__item-img {
+  margin-bottom: 10px; }
+  @media only screen and (max-width: 48em) {
+    .about__item-img--1, .about__item-img--3 {
+      width: 7.5rem; }
+    .about__item-img--2 {
+      width: 11.875rem; } }
+
+@media only screen and (max-width: 48em) and (max-width: 30em) {
+  .about__item-img--1, .about__item-img--3 {
+    width: 5rem; }
+  .about__item-img--2 {
+    width: 8.75rem; } }
+
+.about__item-text {
+  font-size: 0.688rem; }
+  @media only screen and (max-width: 30em) {
+    .about__item-text {
+      display: none; } }
 
 .menu__btn {
   display: none;
@@ -91,7 +174,7 @@ body {
       padding: 0.875rem 2.5rem; } }
 
 .top__wrapper {
-  width: 23.125rem;
+  width: 370px;
   padding: 9.375rem 0 15.625rem; }
   @media only screen and (max-width: 62.5em) {
     .top__wrapper {
@@ -171,7 +254,7 @@ body {
         justify-content: center; } }
   @media only screen and (max-width: 31.25em) {
     .footer {
-      padding: 3.125rem 0;
+      padding: 50px 0;
       font-size: 0.875rem; } }
 
 .email {
@@ -233,7 +316,7 @@ body {
 
 @media only screen and (max-width: 31.25em) {
   .menu__footer {
-    padding: 3.125rem 0;
+    padding: 50px 0;
     text-align: center; } }
 
 @media only screen and (max-width: 31.25em) {
@@ -244,4 +327,12 @@ body {
   padding: 2.5rem 0 9rem 0; }
   @media only screen and (max-width: 30em) {
     .section-top {
-      padding: 1.875rem 0 3.125rem; } }
+      padding: 1.875rem 0 50px; } }
+
+.section-about {
+  background-color: #A5978E;
+  padding: 50px 0;
+  color: #fafafa; }
+  @media only screen and (max-width: 22.5em) {
+    .section-about {
+      padding: 25px 0 10px 0; } }

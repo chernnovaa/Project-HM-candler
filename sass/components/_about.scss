@@ -1,0 +1,107 @@
+.about__inner {
+  display: flex;
+  align-items: center;
+}
+
+.about__content {
+  min-width: 50px;
+
+    @media only screen and (max-width: $bp-largest) {
+      min-width: 300px;
+  }
+
+    @media only screen and (max-width: $bp-large) {
+      min-width: 200px;
+  }
+
+    @media only screen and (max-width: $bp-medium) {
+      min-width: 170px;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      min-width: 233px;
+    }
+  
+  &-title,
+  &-text {
+    margin-bottom: 15px;
+  }
+}
+
+.about__list {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+  padding: 0 0 3rem 6.875rem;
+  flex-basis: 58.125rem;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background-image: url(../images/about-decor.png);
+    width: 1.375rem;
+    height: 1.875rem;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: $color-primary-dark;
+    width: 1000%;
+    height: 1px;
+    left: 1.375rem;
+    bottom: 0.813rem;
+  }
+
+    @media only screen and (max-width: $bp-largest) {
+      padding-left: 1.25rem;
+  }
+
+    @media only screen and (max-width: $bp-large) {
+      gap: 0 10px;
+  }
+
+     @media only screen and (max-width: $bp-medium) {
+        align-items: flex-end;
+        gap: 0 0.313rem;
+  }
+}
+
+.about__item {
+  &-img {
+    margin-bottom: 10px;
+
+      @media only screen and (max-width: $bp-large) {
+        &--1,
+        &--3 {
+          width: 7.5rem;
+        }
+            
+        &--2 {
+          width: 11.875rem;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        &--1,
+        &--3 {
+          width: 5rem;
+        }
+            
+        &--2 {
+           width: 8.75rem;
+        }
+    }
+  }
+}
+
+  &-text {
+    font-size: 0.688rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        display: none;
+    }
+  }
+}

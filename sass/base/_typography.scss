@@ -1,5 +1,5 @@
 body {
-  color: $color-black;
+  color: $color-dark;
   font-family: $font-family-primary;
   font-size: $default-font-size;
   font-weight: 400;
@@ -24,12 +24,22 @@ body {
     }
 }
 
+.heading-secondary {
+  font-size: $font-size-title;
+  font-family: $font-family-secondary;
+  font-weight: 400;
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: 0.938rem;
+  }
+}
+
 .paragraph {
     @media only screen and (max-width: $bp-large) {
       font-size: $responsive-font-size; //10px
   }
 
     @media only screen and (max-width: $bp-medium) {
-      font-size: 0.5rem; //8px
+      font-size: $responsive-font-size-1; //8px
   }
 }
