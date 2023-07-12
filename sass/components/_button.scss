@@ -2,8 +2,8 @@
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 1.875rem;
-  height: 1.563rem;
+  width: 30px;
+  height: 25px;
   background-color: transparent;
 
   span {
@@ -18,13 +18,13 @@
 }
 
 .btn {
-  padding: 1.125rem 3.375rem;
+  padding: 18px 54px;
   background-color: $color-secondary;
   font-family: $font-family-primary;
   font-size: $default-font-size;
 
     @media only screen and (max-width: $bp-medium) {
       font-size: $responsive-font-size; 
-      padding: 0.875rem 2.5rem;
+      padding: 14px 40px;
   }
 }

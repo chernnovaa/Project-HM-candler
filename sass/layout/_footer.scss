@@ -1,5 +1,5 @@
 .footer {
-  padding: 2.5rem 0 2.188rem 0;
+  padding: 40px 0 35px 0;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -16,17 +16,17 @@
   &__contacts {
     display: flex;
     flex-direction: column;
-    width: 14.375rem;
+    width: 230px;
 
       @media only screen and (max-width: $bp-largest-1) {
         width: 100%;
         text-align: center;
-        padding-top: 0.938rem;
+        padding-top: 15px;
       }
   }
   &__social {
     display: flex;
-    gap: 0.938rem;
+    gap: 15px;
 
       @media only screen and (max-width: $bp-largest-1) {
         justify-content: center;
@@ -40,5 +40,5 @@
 }
 
 .email {
-  margin: 1.063rem 0;
+  margin: 17px 0;
 }

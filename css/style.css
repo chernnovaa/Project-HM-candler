@@ -25,7 +25,7 @@ button {
   padding: 0 1rem; }
   @media only screen and (max-width: 62.5em) {
     .container {
-      padding: 0 1.25rem; } }
+      padding: 0 20px; } }
   @media only screen and (max-width: 48em) {
     .container {
       max-width: 40rem; } }
@@ -40,12 +40,12 @@ button {
 body {
   color: #000;
   font-family: "Comfortaa", cursive;
-  font-size: 0.875rem;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.2; }
   @media only screen and (max-width: 48em) {
     body {
-      font-size: 0.625rem; } }
+      font-size: 10px; } }
 
 .heading-tertiary {
   font-family: "Yeseva One", cursive;
@@ -58,7 +58,7 @@ body {
       font-size: 0.938rem; } }
 
 .heading-secondary {
-  font-size: 2.5rem;
+  font-size: 40px;
   font-family: "Yeseva One", cursive;
   font-weight: 400; }
   @media only screen and (max-width: 48em) {
@@ -67,18 +67,18 @@ body {
 
 @media only screen and (max-width: 48em) {
   .paragraph {
-    font-size: 0.625rem; } }
+    font-size: 10px; } }
 
 @media only screen and (max-width: 30em) {
   .paragraph {
-    font-size: 0.5rem; } }
+    font-size: 8px; } }
 
 .about__inner {
   display: flex;
   align-items: center; }
 
 .about__content {
-  min-width: 50px; }
+  min-width: 370px; }
   @media only screen and (max-width: 62.5em) {
     .about__content {
       min-width: 300px; } }
@@ -98,8 +98,8 @@ body {
   display: flex;
   align-items: center;
   gap: 0 20px;
-  padding: 0 0 3rem 6.875rem;
-  flex-basis: 58.125rem;
+  padding: 0 0 48px 110px;
+  flex-basis: 930px;
   position: relative; }
   .about__list::before {
     position: absolute;
@@ -107,43 +107,47 @@ body {
     left: 0;
     bottom: 0;
     background-image: url(../images/about-decor.png);
-    width: 1.375rem;
-    height: 1.875rem; }
+    width: 22px;
+    height: 30px; }
   .about__list::after {
     position: absolute;
     content: "";
     background-color: #7b6152;
     width: 1000%;
     height: 1px;
-    left: 1.375rem;
-    bottom: 0.813rem; }
+    left: 22px;
+    bottom: 14px; }
   @media only screen and (max-width: 62.5em) {
     .about__list {
-      padding-left: 1.25rem; } }
+      padding-left: 20px; } }
   @media only screen and (max-width: 48em) {
     .about__list {
       gap: 0 10px; } }
   @media only screen and (max-width: 30em) {
     .about__list {
       align-items: flex-end;
-      gap: 0 0.313rem; } }
+      gap: 0 5px; } }
 
 .about__item-img {
   margin-bottom: 10px; }
   @media only screen and (max-width: 48em) {
     .about__item-img--1, .about__item-img--3 {
-      width: 7.5rem; }
+      width: 120px; }
     .about__item-img--2 {
-      width: 11.875rem; } }
+      width: 190px; } }
 
 @media only screen and (max-width: 48em) and (max-width: 30em) {
   .about__item-img--1, .about__item-img--3 {
-    width: 5rem; }
+    width: 80px; }
   .about__item-img--2 {
-    width: 8.75rem; } }
+    width: 140px; } }
+
+@media only screen and (max-width: 48em) and (max-width: 22.5em) {
+  .about__item-img--2, .about__item-img--3 {
+    display: none; } }
 
 .about__item-text {
-  font-size: 0.688rem; }
+  font-size: 11px; }
   @media only screen and (max-width: 30em) {
     .about__item-text {
       display: none; } }
@@ -152,8 +156,8 @@ body {
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 1.875rem;
-  height: 1.563rem;
+  width: 30px;
+  height: 25px;
   background-color: transparent; }
   .menu__btn span {
     height: 1px;
@@ -164,69 +168,69 @@ body {
       display: flex; } }
 
 .btn {
-  padding: 1.125rem 3.375rem;
+  padding: 18px 54px;
   background-color: #ffbd59;
   font-family: "Comfortaa", cursive;
-  font-size: 0.875rem; }
+  font-size: 14px; }
   @media only screen and (max-width: 30em) {
     .btn {
-      font-size: 0.625rem;
-      padding: 0.875rem 2.5rem; } }
+      font-size: 10px;
+      padding: 14px 40px; } }
 
 .top__wrapper {
   width: 370px;
-  padding: 9.375rem 0 15.625rem; }
+  padding: 150px 0 250px; }
   @media only screen and (max-width: 62.5em) {
     .top__wrapper {
-      width: 20.813rem;
-      padding: 5.938rem 0 4.375rem; } }
+      width: 333px;
+      padding: 95px 0 70px; } }
   @media only screen and (max-width: 48em) {
     .top__wrapper {
-      width: 14.375rem; } }
+      width: 230px; } }
   @media only screen and (max-width: 30em) {
     .top__wrapper {
-      width: 11.25rem; } }
+      width: 180px; } }
   .top__wrapper-title {
-    margin-bottom: 0.938rem; }
+    margin-bottom: 15px; }
     @media only screen and (max-width: 48em) {
       .top__wrapper-title {
-        margin-bottom: 1.25rem; } }
+        margin-bottom: 20px; } }
     @media only screen and (max-width: 30em) {
       .top__wrapper-title {
-        margin-bottom: 0.938rem; } }
+        margin-bottom: 15px; } }
   .top__wrapper-text {
-    margin-bottom: 3rem; }
+    margin-bottom: 48px; }
     @media only screen and (max-width: 48em) {
       .top__wrapper-text {
-        margin-bottom: 1.25rem; } }
+        margin-bottom: 20px; } }
     @media only screen and (max-width: 30em) {
       .top__wrapper-text {
-        margin-bottom: 0.938rem; } }
+        margin-bottom: 15px; } }
 
 .top__inner {
   position: relative; }
   .top__inner-img {
     position: absolute;
     top: 0;
-    left: 15rem; }
+    left: 240px; }
     @media only screen and (max-width: 62.5em) {
       .top__inner-img {
-        left: 18.75rem; } }
+        left: 300px; } }
     @media only screen and (max-width: 48em) {
       .top__inner-img {
-        left: 11.25rem; } }
+        left: 180px; } }
     @media only screen and (max-width: 30em) {
       .top__inner-img {
-        left: 10.5rem; } }
+        left: 168px; } }
     @media only screen and (max-width: 62.5em) {
       .top__inner-img img {
-        width: 40.938rem; } }
+        width: 655px; } }
     @media only screen and (max-width: 30em) {
       .top__inner-img img {
-        width: 19.25rem; } }
+        width: 300px; } }
 
 .footer {
-  padding: 2.5rem 0 2.188rem 0; }
+  padding: 40px 0 35px 0; }
   .footer__inner {
     display: flex;
     justify-content: space-between;
@@ -240,25 +244,25 @@ body {
   .footer__contacts {
     display: flex;
     flex-direction: column;
-    width: 14.375rem; }
+    width: 230px; }
     @media only screen and (max-width: 56.25em) {
       .footer__contacts {
         width: 100%;
         text-align: center;
-        padding-top: 0.938rem; } }
+        padding-top: 15px; } }
   .footer__social {
     display: flex;
-    gap: 0.938rem; }
+    gap: 15px; }
     @media only screen and (max-width: 56.25em) {
       .footer__social {
         justify-content: center; } }
   @media only screen and (max-width: 31.25em) {
     .footer {
       padding: 50px 0;
-      font-size: 0.875rem; } }
+      font-size: 14px; } }
 
 .email {
-  margin: 1.063rem 0; }
+  margin: 17px 0; }
 
 .header {
   background-color: #fff8f6; }
@@ -266,7 +270,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: .4rem; }
+    padding-top: 6px; }
 
 .phone {
   position: relative; }
@@ -275,21 +279,21 @@ body {
     position: absolute;
     background-image: url(../images/phone.svg);
     background-repeat: no-repeat;
-    width: 1.25rem;
-    height: 1.25rem;
-    left: -1rem;
-    top: -.1rem; }
+    width: 20px;
+    height: 20px;
+    left: -16px;
+    top: -2px; }
     @media only screen and (max-width: 48em) {
       .phone::before {
-        width: 0.875rem;
-        height: 0.875rem;
-        left: -1rem;
-        top: -.2rem;
+        width: 14px;
+        height: 14px;
+        left: -16px;
+        top: -3px;
         background-size: cover; } }
 
 .menu__list {
   display: flex;
-  gap: 1.25rem; }
+  gap: 20px; }
   .menu__list-link {
     text-transform: uppercase; }
 
@@ -299,12 +303,12 @@ body {
 
 @media only screen and (max-width: 40em) {
   .menu__header-list {
-    width: 10rem;
+    width: 160px;
     background-color: #7b6152;
     color: #fff8f6;
     flex-direction: column;
-    gap: 1.25rem 0;
-    padding: 1.563rem 2.188rem 1.563rem 2.813rem;
+    gap: 20px 0;
+    padding: 25px 35px;
     position: absolute;
     left: 0;
     top: 0;
@@ -324,10 +328,10 @@ body {
     flex-direction: column; } }
 
 .section-top {
-  padding: 2.5rem 0 9rem 0; }
+  padding: 40px 0 145px 0; }
   @media only screen and (max-width: 30em) {
     .section-top {
-      padding: 1.875rem 0 50px; } }
+      padding: 30px 0 50px; } }
 
 .section-about {
   background-color: #A5978E;

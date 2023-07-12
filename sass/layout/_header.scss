@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: .4rem;
+    padding-top: 6px;
   }
 }
 
@@ -16,16 +16,16 @@
     position: absolute;
     background-image: url(../images/phone.svg);
     background-repeat: no-repeat;
-    width: 1.25rem;
-    height: 1.25rem;
-    left: -1rem;
-    top: -.1rem;
+    width: 20px;
+    height: 20px;
+    left: -16px;
+    top: -2px;
 
      @media only screen and (max-width: $bp-large) {
-        width: 0.875rem;
-        height: 0.875rem;
-        left: -1rem;
-        top: -.2rem;
+        width: 14px;
+        height: 14px;
+        left: -16px;
+        top: -3px;
         background-size: cover;
     }
   }
