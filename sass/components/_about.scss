@@ -6,23 +6,22 @@
 .about__content {
   min-width: 370px;
 
-    @media only screen and (max-width: $bp-largest) {
-      min-width: 300px;
+  @media only screen and (max-width: $bp-largest) {
+    min-width: 300px;
   }
 
-    @media only screen and (max-width: $bp-large) {
-      min-width: 200px;
+  @media only screen and (max-width: $bp-large) {
+    min-width: 200px;
   }
 
-    @media only screen and (max-width: $bp-medium) {
-      min-width: 170px;
-    }
+  @media only screen and (max-width: $bp-medium) {
+    min-width: 170px;
+  }
 
-    @media only screen and (max-width: $bp-small) {
-      min-width: 233px;
-    }
-  
-  &-title,
+  @media only screen and (max-width: $bp-small) {
+    min-width: 233px;
+  }
+
   &-text {
     margin-bottom: 15px;
   }
@@ -41,7 +40,7 @@
     content: "";
     left: 0;
     bottom: 0;
-    background-image: url(../images/about-decor.png);
+    background-image: url(../images/candle-decor.png);
     width: 22px;
     height: 30px;
   }
@@ -56,17 +55,17 @@
     bottom: 14px;
   }
 
-    @media only screen and (max-width: $bp-largest) {
-      padding-left: 20px;
+  @media only screen and (max-width: $bp-largest) {
+    padding-left: 20px;
   }
 
-    @media only screen and (max-width: $bp-large) {
-      gap: 0 10px;
+  @media only screen and (max-width: $bp-large) {
+    gap: 0 10px;
   }
 
-     @media only screen and (max-width: $bp-medium) {
-        align-items: flex-end;
-        gap: 0 5px;
+  @media only screen and (max-width: $bp-medium) {
+    align-items: flex-end;
+    gap: 0 5px;
   }
 }
 
@@ -74,14 +73,14 @@
   &-img {
     margin-bottom: 10px;
 
-      @media only screen and (max-width: $bp-large) {
-        &--1,
-        &--3 {
-          width: 120px;
-        }
-            
-        &--2 {
-          width: 190px;
+    @media only screen and (max-width: $bp-large) {
+      &--1,
+      &--3 {
+        width: 120px;
+      }
+
+      &--2 {
+        width: 190px;
       }
 
       @media only screen and (max-width: $bp-medium) {
@@ -89,26 +88,26 @@
         &--3 {
           width: 80px;
         }
-            
+
         &--2 {
-           width: 140px;
+          width: 140px;
         }
       }
 
-      @media only screen and (max-width: $bp-small) { 
+      @media only screen and (max-width: $bp-small) {
         &--2,
         &--3 {
           display: none;
         }
+      }
     }
   }
-}
 
   &-text {
     font-size: 11px;
 
-      @media only screen and (max-width: $bp-medium) {
-        display: none;
+    @media only screen and (max-width: $bp-medium) {
+      display: none;
     }
   }
 }
