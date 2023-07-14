@@ -12,6 +12,10 @@
   color: $color-light;
   margin-bottom: 150px;
 
+  @media only screen and (max-width: $bp-large-1) {
+    margin-bottom: 50px;
+  }
+
   @media only screen and (max-width: $bp-small) {
     padding: 25px 0 10px 0;
   }
@@ -19,14 +23,75 @@
 
 .section-main {
   padding-bottom: 150px;
+
+  @media only screen and (max-width: $bp-large-1) {
+    padding-bottom: 50px;
+  }
 }
 
 .section-inner {
   display: grid;
   grid-template-columns: 370px auto;
+
+  @media only screen and (max-width: $bp-largest) {
+    grid-template-columns: 290px auto;
+    gap: 0 10px;
+  }
+
+  @media only screen and (max-width: $bp-largest-1) {
+    grid-template-columns: 200px auto;
+  }
+
+  @media only screen and (max-width: $bp-large-1) {
+    display: block;
+  }
+}
+
+.section-descr {
+  margin-bottom: 30px;
+  text-align: center;
+
+  @media only screen and (max-width: $bp-large-1) {
+    width: 300px;
+    margin: 0 auto 30px;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 235px;
+    margin: 0 auto 25px;
+  }
 }
 
 .section-content {
   display: grid;
   grid-template-columns: auto auto;
+  padding-bottom: 90px;
+
+  @media only screen and (max-width: $bp-large-1) {
+    padding-bottom: 62px;
+  }
+}
+
+.section-decor {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background-image: url(../images/candle-decor.png);
+    width: 22px;
+    height: 30px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: $color-primary-dark;
+    width: 1000%;
+    height: 1px;
+    left: 22px;
+    bottom: 10px;
+  }
 }

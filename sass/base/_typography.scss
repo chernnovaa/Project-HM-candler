@@ -34,6 +34,18 @@ body {
   }
 }
 
+.heading-quaternary {
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-family: $font-family-secondary;
+  font-weight: 400;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 12px;
+    margin-bottom: 9px;
+  }
+}
+
 .paragraph {
   @media only screen and (max-width: $bp-large) {
     font-size: $responsive-font-size; //10px

@@ -33,27 +33,6 @@
   gap: 0 20px;
   padding: 0 0 48px 110px;
   flex-basis: 930px;
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: "";
-    left: 0;
-    bottom: 0;
-    background-image: url(../images/candle-decor.png);
-    width: 22px;
-    height: 30px;
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-    background-color: $color-primary-dark;
-    width: 1000%;
-    height: 1px;
-    left: 22px;
-    bottom: 14px;
-  }
 
   @media only screen and (max-width: $bp-largest) {
     padding-left: 20px;

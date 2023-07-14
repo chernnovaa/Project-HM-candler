@@ -12,9 +12,9 @@
     background-color: $color-primary-dark;
   }
 
-    @media only screen and (max-width: $bp-large-1) {
-      display: flex;
-   }
+  @media only screen and (max-width: $bp-large-1) {
+    display: flex;
+  }
 }
 
 .btn {
@@ -23,8 +23,15 @@
   font-family: $font-family-primary;
   font-size: $default-font-size;
 
-    @media only screen and (max-width: $bp-medium) {
-      font-size: $responsive-font-size; 
-      padding: 14px 40px;
+  @media only screen and (max-width: $bp-medium) {
+    padding: 14px 40px;
+    font-size: $responsive-font-size;
+  }
+
+  &-section {
+    @media only screen and (max-width: $bp-large) {
+      padding: 12px 26px;
+      font-size: 12px;
+    }
   }
 }

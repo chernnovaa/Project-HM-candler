@@ -1,5 +1,18 @@
 .products__content {
   gap: 50px 90px;
+
+  @media only screen and (max-width: $bp-largest) {
+    gap: 65px;
+  }
+
+  @media only screen and (max-width: $bp-largest-1) {
+    grid-template-columns: 290px auto;
+    gap: 30px 15px;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    gap: 40px 7px;
+  }
 }
 
 .products__item {
@@ -7,7 +20,40 @@
   margin: 0 auto;
   text-align: center;
 
+  @media only screen and (max-width: $bp-large) {
+    width: 200px;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 150px;
+  }
+
   &-img {
     margin-bottom: 8px;
+
+    @media only screen and (max-width: $bp-large) {
+      width: 200px;
+      margin-bottom: 6px;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 150px;
+    }
+  }
+
+  &-price {
+    margin-bottom: 12px;
+
+    @media only screen and (max-width: $bp-large) {
+      margin-bottom: 7px;
+    }
+  }
+
+  &-text {
+    margin-bottom: 27px;
+
+    @media only screen and (max-width: $bp-large) {
+      margin-bottom: 18px;
+    }
   }
 }

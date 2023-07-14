@@ -66,6 +66,16 @@ body {
     .heading-secondary {
       font-size: 0.938rem; } }
 
+.heading-quaternary {
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-family: "Yeseva One", cursive;
+  font-weight: 400; }
+  @media only screen and (max-width: 48em) {
+    .heading-quaternary {
+      font-size: 12px;
+      margin-bottom: 9px; } }
+
 @media only screen and (max-width: 48em) {
   .paragraph {
     font-size: 10px; } }
@@ -100,24 +110,7 @@ body {
   align-items: center;
   gap: 0 20px;
   padding: 0 0 48px 110px;
-  flex-basis: 930px;
-  position: relative; }
-  .about__list::before {
-    position: absolute;
-    content: "";
-    left: 0;
-    bottom: 0;
-    background-image: url(../images/candle-decor.png);
-    width: 22px;
-    height: 30px; }
-  .about__list::after {
-    position: absolute;
-    content: "";
-    background-color: #7b6152;
-    width: 1000%;
-    height: 1px;
-    left: 22px;
-    bottom: 14px; }
+  flex-basis: 930px; }
   @media only screen and (max-width: 62.5em) {
     .about__list {
       padding-left: 20px; } }
@@ -175,16 +168,55 @@ body {
   font-size: 14px; }
   @media only screen and (max-width: 30em) {
     .btn {
-      font-size: 10px;
-      padding: 14px 40px; } }
+      padding: 14px 40px;
+      font-size: 10px; } }
+  @media only screen and (max-width: 48em) {
+    .btn-section {
+      padding: 12px 26px;
+      font-size: 12px; } }
 
 .products__content {
   gap: 50px 90px; }
+  @media only screen and (max-width: 62.5em) {
+    .products__content {
+      gap: 65px; } }
+  @media only screen and (max-width: 56.25em) {
+    .products__content {
+      grid-template-columns: 290px auto;
+      gap: 30px 15px; } }
+  @media only screen and (max-width: 30em) {
+    .products__content {
+      gap: 40px 7px; } }
 
 .products__item {
   width: 290px;
   margin: 0 auto;
   text-align: center; }
+  @media only screen and (max-width: 48em) {
+    .products__item {
+      width: 200px; } }
+  @media only screen and (max-width: 30em) {
+    .products__item {
+      width: 150px; } }
+  .products__item-img {
+    margin-bottom: 8px; }
+    @media only screen and (max-width: 48em) {
+      .products__item-img {
+        width: 200px;
+        margin-bottom: 6px; } }
+    @media only screen and (max-width: 30em) {
+      .products__item-img {
+        width: 150px; } }
+  .products__item-price {
+    margin-bottom: 12px; }
+    @media only screen and (max-width: 48em) {
+      .products__item-price {
+        margin-bottom: 7px; } }
+  .products__item-text {
+    margin-bottom: 27px; }
+    @media only screen and (max-width: 48em) {
+      .products__item-text {
+        margin-bottom: 18px; } }
 
 .top__wrapper {
   width: 370px;
@@ -347,17 +379,68 @@ body {
   padding: 50px 0;
   color: #fafafa;
   margin-bottom: 150px; }
+  @media only screen and (max-width: 40em) {
+    .section-about {
+      margin-bottom: 50px; } }
   @media only screen and (max-width: 22.5em) {
     .section-about {
       padding: 25px 0 10px 0; } }
 
 .section-main {
   padding-bottom: 150px; }
+  @media only screen and (max-width: 40em) {
+    .section-main {
+      padding-bottom: 50px; } }
 
 .section-inner {
   display: grid;
   grid-template-columns: 370px auto; }
+  @media only screen and (max-width: 62.5em) {
+    .section-inner {
+      grid-template-columns: 290px auto;
+      gap: 0 10px; } }
+  @media only screen and (max-width: 56.25em) {
+    .section-inner {
+      grid-template-columns: 200px auto; } }
+  @media only screen and (max-width: 40em) {
+    .section-inner {
+      display: block; } }
+
+.section-descr {
+  margin-bottom: 30px;
+  text-align: center; }
+  @media only screen and (max-width: 40em) {
+    .section-descr {
+      width: 300px;
+      margin: 0 auto 30px; } }
+  @media only screen and (max-width: 30em) {
+    .section-descr {
+      width: 235px;
+      margin: 0 auto 25px; } }
 
 .section-content {
   display: grid;
-  grid-template-columns: auto auto; }
+  grid-template-columns: auto auto;
+  padding-bottom: 90px; }
+  @media only screen and (max-width: 40em) {
+    .section-content {
+      padding-bottom: 62px; } }
+
+.section-decor {
+  position: relative; }
+  .section-decor::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background-image: url(../images/candle-decor.png);
+    width: 22px;
+    height: 30px; }
+  .section-decor::after {
+    position: absolute;
+    content: "";
+    background-color: #7b6152;
+    width: 1000%;
+    height: 1px;
+    left: 22px;
+    bottom: 10px; }
