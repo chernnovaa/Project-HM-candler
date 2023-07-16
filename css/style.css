@@ -218,6 +218,33 @@ body {
       .products__item-text {
         margin-bottom: 18px; } }
 
+.steps__list {
+  gap: 70px 25px;
+  counter-reset: number; }
+
+.steps__item {
+  display: flex;
+  gap: 40px;
+  list-style-type: none;
+  position: relative; }
+  .steps__item::before {
+    counter-increment: number;
+    content: "0" counter(number);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 30px;
+    color: #bea495;
+    font-family: "Yeseva One", cursive; }
+  .steps__item--even::before {
+    left: auto;
+    right: 0; }
+  .steps__item:nth-child(n + 10)::before {
+    content: counter(number); }
+  .steps__item-text {
+    flex-basis: 174px;
+    padding-bottom: 40px; }
+
 .top__wrapper {
   width: 370px;
   padding: 150px 0 250px; }
@@ -375,7 +402,7 @@ body {
       padding: 30px 0 50px; } }
 
 .section-about {
-  background-color: #A5978E;
+  background-color: #a5978e;
   padding: 50px 0;
   color: #fafafa;
   margin-bottom: 150px; }
@@ -407,8 +434,7 @@ body {
       display: block; } }
 
 .section-descr {
-  margin-bottom: 30px;
-  text-align: center; }
+  margin-bottom: 30px; }
   @media only screen and (max-width: 40em) {
     .section-descr {
       width: 300px;
