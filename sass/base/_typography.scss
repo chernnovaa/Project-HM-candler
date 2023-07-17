@@ -12,14 +12,14 @@ body {
 
 .heading-tertiary {
   font-family: $font-family-secondary;
-  font-size: 1.875rem; //30px
+  font-size: 30px;
 
   @media only screen and (max-width: $bp-large) {
-    font-size: 1.25rem; //20px
+    font-size: 30px;
   }
 
   @media only screen and (max-width: $bp-medium) {
-    font-size: 0.938rem; //15px
+    font-size: 15px;
   }
 }
 
@@ -30,7 +30,7 @@ body {
   margin-bottom: 15px;
 
   @media only screen and (max-width: $bp-large) {
-    font-size: 0.938rem;
+    font-size: 15px !important;
   }
 }
 

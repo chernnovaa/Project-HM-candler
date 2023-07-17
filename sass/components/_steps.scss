@@ -1,6 +1,24 @@
+.steps__title {
+  @media only screen and (max-width: $bp-largest-1) {
+    font-size: 30px;
+  }
+}
+
 .steps__list {
   gap: 70px 25px;
   counter-reset: number;
+
+  @media only screen and (max-width: $bp-big) {
+    gap: 25px 5px;
+  }
+
+  @media only screen and (max-width: $bp-largest-1) {
+    gap: 25px 35px;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    gap: 25px 20px;
+  }
 }
 
 .steps__item {
@@ -8,6 +26,18 @@
   gap: 40px;
   list-style-type: none;
   position: relative;
+
+  @media only screen and (max-width: $bp-big) {
+    gap: 0 5px;
+  }
+
+  @media only screen and (max-width: $bp-largest-1) {
+    gap: 0 20px;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    gap: 0 15px;
+  }
 
   &::before {
     counter-increment: number;
@@ -18,6 +48,10 @@
     font-size: 30px;
     color: $color-secondary-light;
     font-family: $font-family-secondary;
+
+    @media only screen and (max-width: $bp-largest-1) {
+      font-size: 20px;
+    }
   }
 
   &--even::before {
@@ -31,5 +65,16 @@
   &-text {
     flex-basis: 174px;
     padding-bottom: 40px;
+  }
+
+  &-img {
+    @media only screen and (max-width: $bp-largest-1) {
+      width: 85px;
+      object-fit: cover;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 66px;
+    }
   }
 }

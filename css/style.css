@@ -49,13 +49,13 @@ body {
 
 .heading-tertiary {
   font-family: "Yeseva One", cursive;
-  font-size: 1.875rem; }
+  font-size: 30px; }
   @media only screen and (max-width: 48em) {
     .heading-tertiary {
-      font-size: 1.25rem; } }
+      font-size: 30px; } }
   @media only screen and (max-width: 30em) {
     .heading-tertiary {
-      font-size: 0.938rem; } }
+      font-size: 15px; } }
 
 .heading-secondary {
   font-size: 40px;
@@ -64,7 +64,7 @@ body {
   margin-bottom: 15px; }
   @media only screen and (max-width: 48em) {
     .heading-secondary {
-      font-size: 0.938rem; } }
+      font-size: 15px !important; } }
 
 .heading-quaternary {
   margin-bottom: 16px;
@@ -175,6 +175,30 @@ body {
       padding: 12px 26px;
       font-size: 12px; } }
 
+.course__item {
+  position: relative;
+  color: #fff;
+  font-size: 11px;
+  font-family: "Yeseva One", cursive; }
+  .course__item-title, .course__item-time, .course__item-price {
+    position: absolute;
+    background-color: #bea495; }
+  .course__item-title {
+    padding: 15px;
+    left: 10px;
+    top: 45%; }
+  .course__item-time {
+    padding: 7px 10px;
+    left: 10px;
+    top: 60%; }
+    .course__item-time span {
+      font-size: 10px;
+      font-family: "Comfortaa", cursive; }
+  .course__item-price {
+    padding: 19px 10px;
+    right: 0;
+    bottom: 2px; }
+
 .products__content {
   gap: 50px 90px; }
   @media only screen and (max-width: 62.5em) {
@@ -218,15 +242,37 @@ body {
       .products__item-text {
         margin-bottom: 18px; } }
 
+@media only screen and (max-width: 56.25em) {
+  .steps__title {
+    font-size: 30px; } }
+
 .steps__list {
   gap: 70px 25px;
   counter-reset: number; }
+  @media only screen and (max-width: 70em) {
+    .steps__list {
+      gap: 25px 5px; } }
+  @media only screen and (max-width: 56.25em) {
+    .steps__list {
+      gap: 25px 35px; } }
+  @media only screen and (max-width: 30em) {
+    .steps__list {
+      gap: 25px 20px; } }
 
 .steps__item {
   display: flex;
   gap: 40px;
   list-style-type: none;
   position: relative; }
+  @media only screen and (max-width: 70em) {
+    .steps__item {
+      gap: 0 5px; } }
+  @media only screen and (max-width: 56.25em) {
+    .steps__item {
+      gap: 0 20px; } }
+  @media only screen and (max-width: 30em) {
+    .steps__item {
+      gap: 0 15px; } }
   .steps__item::before {
     counter-increment: number;
     content: "0" counter(number);
@@ -236,6 +282,9 @@ body {
     font-size: 30px;
     color: #bea495;
     font-family: "Yeseva One", cursive; }
+    @media only screen and (max-width: 56.25em) {
+      .steps__item::before {
+        font-size: 20px; } }
   .steps__item--even::before {
     left: auto;
     right: 0; }
@@ -244,6 +293,13 @@ body {
   .steps__item-text {
     flex-basis: 174px;
     padding-bottom: 40px; }
+  @media only screen and (max-width: 56.25em) {
+    .steps__item-img {
+      width: 85px;
+      object-fit: cover; } }
+  @media only screen and (max-width: 30em) {
+    .steps__item-img {
+      width: 66px; } }
 
 .top__wrapper {
   width: 370px;
@@ -254,10 +310,13 @@ body {
       padding: 95px 0 70px; } }
   @media only screen and (max-width: 48em) {
     .top__wrapper {
-      width: 230px; } }
+      width: 230px;
+      position: inherit;
+      z-index: 10; } }
   @media only screen and (max-width: 30em) {
     .top__wrapper {
-      width: 180px; } }
+      width: 180px;
+      z-index: 0; } }
   .top__wrapper-title {
     margin-bottom: 15px; }
     @media only screen and (max-width: 48em) {
@@ -438,7 +497,8 @@ body {
   @media only screen and (max-width: 40em) {
     .section-descr {
       width: 300px;
-      margin: 0 auto 30px; } }
+      margin: 0 auto 30px;
+      text-align: center; } }
   @media only screen and (max-width: 30em) {
     .section-descr {
       width: 235px;
