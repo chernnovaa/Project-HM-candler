@@ -26,6 +26,9 @@
 
   @media only screen and (max-width: $bp-medium) {
     width: 150px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 
   &-img {

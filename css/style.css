@@ -175,11 +175,18 @@ body {
       padding: 12px 26px;
       font-size: 12px; } }
 
+@media only screen and (max-width: 30em) {
+  .course__content {
+    grid-template-columns: auto !important; } }
+
 .course__item {
   position: relative;
   color: #fff;
   font-size: 11px;
   font-family: "Yeseva One", cursive; }
+  @media only screen and (max-width: 30em) {
+    .course__item-img {
+      width: 200px !important; } }
   .course__item-title, .course__item-time, .course__item-price {
     position: absolute;
     background-color: #bea495; }
@@ -187,6 +194,11 @@ body {
     padding: 15px;
     left: 10px;
     top: 45%; }
+    @media only screen and (max-width: 48em) {
+      .course__item-title {
+        padding: 5px;
+        top: 40%;
+        left: 0; } }
   .course__item-time {
     padding: 7px 10px;
     left: 10px;
@@ -194,10 +206,20 @@ body {
     .course__item-time span {
       font-size: 10px;
       font-family: "Comfortaa", cursive; }
+    @media only screen and (max-width: 48em) {
+      .course__item-time {
+        padding: 5px;
+        top: 55%;
+        left: 0; } }
   .course__item-price {
     padding: 19px 10px;
     right: 0;
     bottom: 2px; }
+    @media only screen and (max-width: 48em) {
+      .course__item-price {
+        padding: 10px;
+        right: 0;
+        bottom: 9px; } }
 
 .products__content {
   gap: 50px 90px; }
@@ -221,7 +243,10 @@ body {
       width: 200px; } }
   @media only screen and (max-width: 30em) {
     .products__item {
-      width: 150px; } }
+      width: 150px;
+      align-items: center;
+      display: flex;
+      flex-direction: column; } }
   .products__item-img {
     margin-bottom: 8px; }
     @media only screen and (max-width: 48em) {
