@@ -1,9 +1,5 @@
 .products__content {
-  gap: 50px 90px;
-
-  @media only screen and (max-width: $bp-largest) {
-    gap: 65px;
-  }
+  gap: 50px 50px;
 
   @media only screen and (max-width: $bp-largest-1) {
     grid-template-columns: 290px auto;

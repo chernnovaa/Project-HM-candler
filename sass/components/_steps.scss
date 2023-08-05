@@ -2,6 +2,9 @@
   @media only screen and (max-width: $bp-largest-1) {
     font-size: 30px;
   }
+  @media only screen and (max-width: $bp-large) {
+    font-size: 15px;
+  }
 }
 
 .steps__list {

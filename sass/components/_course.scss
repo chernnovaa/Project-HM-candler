@@ -1,6 +1,9 @@
-.course__content {
+.course__content.products__content {
+  @media only screen and (max-width: $bp-largest) {
+    gap: 5px;
+  }
   @media only screen and (max-width: $bp-medium) {
-    grid-template-columns: auto !important;
+    grid-template-columns: auto;
   }
 }
 
@@ -9,10 +12,15 @@
   color: #fff;
   font-size: 11px;
   font-family: $font-family-secondary;
+  margin-bottom: 6px;
 
   &-img {
+    @media only screen and (max-width: $bp-large) {
+      width: 195px;
+    }
+
     @media only screen and (max-width: $bp-medium) {
-      width: 200px !important;
+      width: 200px;
     }
   }
 
