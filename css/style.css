@@ -338,6 +338,15 @@ body {
 .team__content.section-content {
   padding-bottom: 0;
   gap: 75px; }
+  @media only screen and (max-width: 62.5em) {
+    .team__content.section-content {
+      gap: 30px 20px; } }
+  @media only screen and (max-width: 40em) {
+    .team__content.section-content {
+      justify-items: center; } }
+  @media only screen and (max-width: 30em) {
+    .team__content.section-content {
+      grid-template-columns: auto; } }
 
 .team__item {
   position: relative; }
@@ -350,11 +359,42 @@ body {
     z-index: 4;
     bottom: 13px;
     right: 33px; }
+    @media only screen and (max-width: 48em) {
+      .team__item-box {
+        width: 120px;
+        padding: 9px 6px 10px;
+        bottom: -15px;
+        right: 3px; } }
+    @media only screen and (max-width: 40em) {
+      .team__item-box {
+        left: 80px;
+        right: auto; } }
+    @media only screen and (max-width: 30em) {
+      .team__item-box {
+        width: 165px; } }
   .team__item-name {
     font-family: "Yeseva One", cursive;
     font-size: 12px; }
+    @media only screen and (max-width: 48em) {
+      .team__item-name {
+        font-size: 11px; } }
+    @media only screen and (max-width: 30em) {
+      .team__item-name {
+        font-size: 12px; } }
   .team__item-descr {
     font-size: 10px; }
+    @media only screen and (max-width: 48em) {
+      .team__item-descr {
+        font-size: 8px; } }
+    @media only screen and (max-width: 30em) {
+      .team__item-descr {
+        font-size: 10px; } }
+  @media only screen and (max-width: 48em) {
+    .team__item-img {
+      width: 140px; } }
+  @media only screen and (max-width: 30em) {
+    .team__item-img {
+      width: 204px; } }
 
 .top__wrapper {
   width: 370px;

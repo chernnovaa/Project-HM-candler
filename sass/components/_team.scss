@@ -1,6 +1,16 @@
 .team__content.section-content {
   padding-bottom: 0;
   gap: 75px;
+
+  @media only screen and (max-width: $bp-largest) {
+    gap: 30px 20px;
+  }
+  @media only screen and (max-width: $bp-large-1) {
+    justify-items: center;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-columns: auto;
+  }
 }
 .team__item {
   position: relative;
@@ -13,12 +23,46 @@
     z-index: 4;
     bottom: 13px;
     right: 33px;
+
+    @media only screen and (max-width: $bp-large) {
+      width: 120px;
+      padding: 9px 6px 10px;
+      bottom: -15px;
+      right: 3px;
+    }
+    @media only screen and (max-width: $bp-large-1) {
+      left: 80px;
+      right: auto;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      width: 165px;
+    }
   }
   &-name {
     font-family: $font-family-secondary;
     font-size: 12px;
+    @media only screen and (max-width: $bp-large) {
+      font-size: 11px;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 12px;
+    }
   }
   &-descr {
     font-size: 10px;
+    @media only screen and (max-width: $bp-large) {
+      font-size: 8px;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 10px;
+    }
+  }
+  &-img {
+    @media only screen and (max-width: $bp-large) {
+      width: 140px;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      width: 204px;
+    }
   }
 }
