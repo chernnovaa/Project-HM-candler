@@ -101,4 +101,10 @@
   color: #fff;
   padding: 80px 0 60px;
   margin-bottom: 150px;
+  @media only screen and (max-width: $bp-largest) {
+    padding: 50px 0;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    margin-bottom: 50px;
+  }
 }
