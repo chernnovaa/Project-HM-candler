@@ -1,0 +1,42 @@
+.promo {
+  background-image: url(../images/promo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 140px 0;
+  @media only screen and (max-width: $bp-large) {
+    padding: 67px 0;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    padding: 42px 0;
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+  &__text {
+    font-family: $font-family-secondary;
+    font-size: $font-size-title;
+    color: $color-light;
+    padding-left: 56px;
+    max-width: 765px;
+    margin-right: 110px;
+    @media only screen and (max-width: $bp-large) {
+      padding-left: 0;
+    }
+    @media only screen and (max-width: $bp-large-2) {
+      font-size: 15px;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      margin-right: 50px;
+    }
+  }
+  &__link {
+    color: $color-dark;
+    background-color: $color-secondary;
+    display: inline-block;
+    padding: 14px 25px;
+    min-width: 135px;
+    text-align: center;
+  }
+}

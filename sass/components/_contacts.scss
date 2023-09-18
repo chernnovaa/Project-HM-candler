@@ -1,0 +1,70 @@
+.contacts__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media only screen and (max-width: $bp-large) {
+    gap: 0 20px;
+  }
+}
+
+.form {
+  background-color: #fff;
+  width: 664px;
+  padding: 75px 42px 67px;
+  @media only screen and (max-width: $bp-large) {
+    width: 440px;
+    padding: 30px 22px;
+  }
+  &__title {
+    font-family: $font-family-secondary;
+    font-size: $font-size-title;
+    margin-bottom: 60px;
+    @media only screen and (max-width: $bp-large) {
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+  }
+  &__input {
+    background-color: #fff;
+    border: none;
+    border-bottom: 1px solid $color-dark;
+    margin-bottom: 15px;
+    padding: 7px 10px;
+    color: $color-dark;
+    display: block;
+    width: 100%;
+    &::placeholder {
+      color: $color-secondary-dark;
+      font-family: $font-family-primary;
+      font-size: $default-font-size;
+      font-weight: 400;
+      @media only screen and (max-width: $bp-medium) {
+        font-size: $responsive-font-size;
+      }
+    }
+  }
+  &__btn {
+    background-color: $color-secondary;
+    font-family: $font-family-primary;
+    font-size: $default-font-size;
+    color: $color-dark;
+    padding: 17px 34px;
+    margin-top: 36px;
+    @media only screen and (max-width: $bp-large) {
+      margin-top: 10px;
+    }
+  }
+}
+
+.contacts__img {
+  @media only screen and (max-width: $bp-largest) {
+    width: 335px;
+  }
+  @media only screen and (max-width: $bp-large) {
+    width: 187px;
+    object-fit: cover;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
+}
