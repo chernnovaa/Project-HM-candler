@@ -528,6 +528,35 @@ body {
     min-width: 135px;
     text-align: center; }
 
+.accordeon__item {
+  background-color: #fafafa;
+  margin-bottom: 10px; }
+
+.accordeon__title {
+  font-family: "Yeseva One", cursive;
+  font-size: 16px;
+  display: block;
+  background-color: transparent;
+  padding: 16px 50px 16px 13px;
+  position: relative;
+  width: 100%;
+  text-align: left; }
+  .accordeon__title::after {
+    content: "";
+    background-image: url(../images/arrow.svg);
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 26px;
+    top: 17px; }
+
+.accordeon__text {
+  padding: 20px 40px;
+  opacity: 0;
+  max-height: 0; }
+  .accordeon__text--visible {
+    opacity: 1; }
+
 @media only screen and (max-width: 56.25em) {
   .steps__title {
     font-size: 30px; } }
