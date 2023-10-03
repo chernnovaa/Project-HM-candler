@@ -41,3 +41,31 @@ accordeonTitles.forEach.call(accordeonTitles, function (e) {
     }
   });
 });
+
+document.querySelector(".menu__list").addEventListener("click", function (e) {
+  //console.log(e.target);
+  e.preventDefault();
+
+  if (e.target.classList.contains("menu__list-link")) {
+    //console.log("link");
+
+    const id = e.target.getAttribute("href");
+    //console.log(id);
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+  }
+});
+
+document
+  .querySelector(".menu__footer-list")
+  .addEventListener("click", function (e) {
+    //console.log(e.target);
+    e.preventDefault();
+
+    if (e.target.classList.contains("menu__list-link")) {
+      //console.log("link");
+
+      const id = e.target.getAttribute("href");
+      //console.log(id);
+      document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    }
+  });

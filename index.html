@@ -31,22 +31,22 @@
         </button>
         <ul class="menu__list menu__header-list">
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Про нас</a>
+            <a class="menu__list-link" href="#section--about">Про нас</a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Каталог</a>
+            <a class="menu__list-link" href="#section--products">Каталог</a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Команда</a>
+            <a class="menu__list-link" href="#section--team">Команда</a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Відгуки</a>
+            <a class="menu__list-link" href="#section--feedback">Відгуки</a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Курси</a>
+            <a class="menu__list-link" href="#section--course">Курси</a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Контакти</a>
+            <a class="menu__list-link" href="#section--contacts">Контакти</a>
           </li>
         </ul>
       </nav>
@@ -73,7 +73,7 @@
       </div>
     </section>
 
-    <section class="section-about">
+    <section class="section-about" id="section--about">
       <div class="container about__inner">
         <div class="about__content">
           <h2 class="heading-secondary about__content-title">Про нас</h2>
@@ -103,7 +103,7 @@
       </div>
     </section>
 
-    <section class="section-products section-main">
+    <section class="section-products section-main" id="section--products">
       <div class="container section-inner">
         <div class="products__descr section-descr">
           <h2 class="heading-secondary">Наші товари</h2>
@@ -215,7 +215,7 @@
       </div>
     </section>
 
-    <section class="section-course section-main">
+    <section class="section-course section-main" id="section--course">
       <div class="container section-inner">
         <div class="course__descr section-descr">
           <h2 class="heading-secondary">Наші курси</h2>
@@ -250,7 +250,7 @@
         </div>
       </div>
     </section>
-    <section class="section-team">
+    <section class="section-team" id="section--team">
       <div class="container section-inner">
         <div class="team__descr section-descr">
           <h2 class="heading-secondary">Наші викладачі</h2>
@@ -289,7 +289,7 @@
         </div>
       </div>
     </section>
-    <section class="section-feedback section-main">
+    <section class="section-feedback section-main" id="section--feedback">
       <div class="container feedback-inner section-inner">
         <div class="feedback-descr section-descr">
           <h2 class="heading-secondary">Відгуки від клієнтів</h2>
@@ -420,39 +420,48 @@
             <div class="accordeon__item">
               <button class="accordeon__title">Які запахи доступні для свічок?</button>
               <div class="accordeon__text">
-                <ol>
-                  <li>Ваніль - теплий, сладкий і затишний аромат, який нагадує про домашній затишок.</li>
-                  <li>Лаванда - приємний, успокійливий і релаксуючий запах, який допомагає зняти стрес і напругу.</li>
-                  <li>Рожевий грейпфрут - свіжий, фруктовий і енергійний аромат, який допомагає підняти настрій і
-                    збадьорити.</li>
-                  <li>Кедр - деревний, земний і маскулінний аромат, який надає відчуття стабільності і надійності.</li>
-                  <li>Яблуко і кориця - теплий і затишний аромат, який нагадує про зимові свята і домашність.</li>
-                </ol>
+                <div class="accordeon__text-padding">
+                  <ol>
+                    <li>Ваніль - теплий, сладкий і затишний аромат, який нагадує про домашній затишок.</li>
+                    <li>Лаванда - приємний, успокійливий і релаксуючий запах, який допомагає зняти стрес і напругу.</li>
+                    <li>Рожевий грейпфрут - свіжий, фруктовий і енергійний аромат, який допомагає підняти настрій і
+                      збадьорити.</li>
+                    <li>Кедр - деревний, земний і маскулінний аромат, який надає відчуття стабільності і надійності.
+                    </li>
+                    <li>Яблуко і кориця - теплий і затишний аромат, який нагадує про зимові свята і домашність.</li>
+                  </ol>
+                </div>
               </div>
             </div>
             <div class="accordeon__item">
               <button class="accordeon__title">Як довго горять свічки?</button>
               <div class="accordeon__text">
-                <p>Це залежить від матеріалу та розмірів свічок. Звичайна парафінова свічка середнього розміру згорить
-                  приблизно за 25
-                  хвилин, воскова горітиме до години, стеаринова - від 40 до 45.</p>
+                <div class="accordeon__text-padding">
+                  <p>Це залежить від матеріалу та розмірів свічок. Звичайна парафінова свічка середнього розміру згорить
+                    приблизно за 25
+                    хвилин, воскова горітиме до години, стеаринова - від 40 до 45.</p>
+                </div>
               </div>
             </div>
             <div class="accordeon__item">
               <button class="accordeon__title">Які є варіанти доставки?</button>
               <div class="accordeon__text">
-                <ol>
-                  <li>Новою поштою</li>
-                  <li>Кур'єром Нової пошти</li>
-                  <li>Поштомат Нової пошти</li>
-                  <li>Укрпошта Експрес до відділення</li>
-                </ol>
+                <div class="accordeon__text-padding">
+                  <ol>
+                    <li>Новою поштою</li>
+                    <li>Кур'єром Нової пошти</li>
+                    <li>Поштомат Нової пошти</li>
+                    <li>Укрпошта Експрес до відділення</li>
+                  </ol>
+                </div>
               </div>
             </div>
             <div class="accordeon__item">
               <button class="accordeon__title">Чи можна зробити замовлення на індивідуальний дизайн свічки?</button>
               <div class="accordeon__text">
-                <p>Так</p>
+                <div class="accordeon__text-padding">
+                  <p>Так</p>
+                </div>
               </div>
             </div>
 
@@ -466,7 +475,7 @@
         <a class="promo__link" href="#">В каталог</a>
       </div>
     </section>
-    <section class="section-contacts">
+    <section class="section-contacts" id="section--contacts">
       <div class="container contacts__inner">
         <form class="form" action="">
           <p class="form__title">Підпишись на наші акції</p>
@@ -487,22 +496,22 @@
       <nav class="menu menu__footer">
         <ul class="menu__list menu__footer-list">
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Про нас</a>
+            <a class="menu__list-link" href="#section--about">Про нас</a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Каталог</a>
+            <a class="menu__list-link" href="#section--products">Каталог</a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Команда</a>
+            <a class="menu__list-link" href="#section--team">Команда</a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Відгуки</a>
+            <a class="menu__list-link" href="#section--feedback">Відгуки</a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Курси</a>
+            <a class="menu__list-link" href="#section--course">Курси</a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Команда</a>
+            <a class="menu__list-link" href="#section--contacts">Контакти</a>
           </li>
         </ul>
       </nav>

@@ -22,11 +22,18 @@
       right: 26px;
       top: 17px;
     }
+
+    &--active::after {
+      transform: rotate(180deg);
+    }
   }
   &__text {
-    padding: 20px 40px;
     opacity: 0;
     max-height: 0;
+    transition: opacity 0.3s, max-height 0.3s;
+    &-padding {
+      padding: 20px 40px;
+    }
     &--visible {
       opacity: 1;
     }
